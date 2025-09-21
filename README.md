@@ -27,13 +27,13 @@ It enables people to **communicate without internet** using mesh networking, sen
 
 ## 📸 Screenshots
 
-_(Add screenshots of your app here)_
+<!-- _(Add screenshots of your app here)_ -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="screenshots/role_selector.png" width="250" />
   <img src="screenshots/chat.png" width="250" />
   <img src="screenshots/sos.png" width="250" />
-</p>
+</p> -->
 
 ---
 
@@ -105,7 +105,7 @@ flutter run -d chrome
 
 ---
 
-## 🧑‍�‍🧑 Usage (Users)
+## 🧑‍ 🧑 Usage (Users)
 
 1. Launch the app
 2. **Select your role** (Helper, Rescuer, Victim)
