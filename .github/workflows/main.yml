@@ -1,10 +1,10 @@
-name: Build Release APK
+name: Build Release APK - 2
 
 on:
   push:
     branches:
-      - main      # or whatever your branch is
-  workflow_dispatch:  # allows manual trigger too
+      - main
+  workflow_dispatch:
 
 jobs:
   build_android:
@@ -18,14 +18,14 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'  # or specify version like '3.10.0'
+          flutter-version: '3.19.0'      # specify exact stable version
+          channel: stable
 
       - name: Get dependencies
         run: flutter pub get
 
       - name: Build APK (release)
-        run: |
-          flutter build apk --release
+        run: flutter build apk --release
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
